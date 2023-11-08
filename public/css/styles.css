@@ -1,0 +1,459 @@
+/*PALETA DE COLORES A USAR:
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 20px;
+}
+
+/*HEADER*/
+header{ background-color: #EAC926;}
+div.top-header{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 130%;
+}
+header div.header-logo{
+    width: 50%;
+    padding: 10px;
+}
+header .form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+section.banner img{
+    width: 100%;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+header .form .input{
+    display: flex;
+    background-color: #FFF;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 80%;
+    height: 50%;
+    border-radius: 6px;
+}
+
+header .form .input .searchbar{
+    width: 100%;
+    margin: 1px;
+    padding: 1px;
+    align-self: center;
+    border: none;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    margin: 1px;
+}
+ul
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*BODY*/
+body{font-family: 'Roboto', sans-serif;
+background-color: #ebebeb;}
+h3, .description{
+    color: #666;
+}
+/*FOOTER*/
+footer {background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;}
+    
+.icon-hand {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+/* TAMAÑOS DE TEXTO */
+.price { font-size: 18px; width: 30%;}
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+header{font-size: 12px;}
+h3{font-size: 24px;}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+/*HAMBURGUESA*/
+div.burger-menu{
+    text-align: center;
+}
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+/*ICONOS FOOTER*/
+.footer-icons i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    background-color: white;
+    color: #1259c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+/*CONTENEDOR DE PRODUCTOS*/
+article div.main-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background-color: white;
+    margin-bottom: 10px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    
+}
+img.product_img {
+width: 100%;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+main section article image{
+    max-width: 100%;
+    height: auto;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 1.5s;
+}
+main section article:hover i{
+    transform: rotate(-90deg);
+    }
+
+.discount{
+    color: #39b54a;
+    width: 50%;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+header ul {
+    display: none;
+}
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.copyright{
+    margin-bottom: 3vw;
+    margin-left: 4vw;
+    text-align: left;
+}
+
+
+
+/*FORMULARIO LOGIN*/
+
+.login-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 2%;
+}
+
+.login h3 {
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#password, #user{
+    height: 11%;
+}
+
+.login {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 10px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.login input[type="text"], 
+.login input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #0022AA;
+}
+
+#user:focus, #password:focus, #name:focus, #email:focus, #date:focus, #address:focus {
+    outline: 1px solid black;
+    border: 3px solid #EAC926;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 10px;
+}
+  input:invalid + .error-message {
+    display: block;
+}
+
+/*FORMUALRIO REGISTRO*/
+
+.register-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    margin-top: 2%;
+}
+
+.register {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.register h3 {
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* INPUTS REGISTRO */
+.register input[type="text"],
+.register input[type="email"],
+.register input[type="date"],
+.register input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#user-profile {
+    width: 80%;
+}
+
+.register label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    width: 80%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.register input[type="radio"]{
+    margin-right: 5px;
+}
+.register input[type="checkbox"] {
+    margin-right: 5px;
+    display: flex;
+    margin: 5px 0;
+}
+#checkboxes{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#checkboxes div{
+    align-items: center;
+    display: flex;
+}
+
+#picture{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10px 0px 15px 0px;
+}
+
+/*TABLET*/
+@media (min-width: 576px){
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    div.burger-menu {
+        display: none;
+    }
+    header ul {
+        display: block;
+    }
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section div.products article{
+        width: 45%;
+    }
+    .price,
+    .discount{
+        width: 50%;
+    }
+    main section article:hover .description {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }   
+    nav ul{
+        display: flex;
+        width: 35%;
+        justify-content: space-around;
+    }
+
+/*AJUSTE LOGO, BUSQUEDA Y TEXTO*/
+header .form {
+    width: 30%;
+    display: flex;
+    align-items: center;}
+    
+    header .form .input {
+    display: flex;
+    width: 100% }
+    
+    header .form .input .searchbar {
+    width: 100%;
+    padding: 1px;
+    }
+
+    header div.header-logo {
+        width: 33%;
+        padding: 5px; 
+    }
+    
+    header div.top-header p{
+        width: 30%;
+    }    
+
+div.top-header{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*DESKTOP*/
+@media (min-width: 992px){
+    main section div.products article{
+        width: 22%;
+    }
+    .footer-box{
+        display: flex;
+        flex-direction: row;
+        margin: 2%;
+    }
+    .footer-icons i:hover{
+        color: #EAC926;
+    }
+}
+}
