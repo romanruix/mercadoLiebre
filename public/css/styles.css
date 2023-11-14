@@ -43,6 +43,7 @@ header .form{
     align-items: center;
     padding: 2px;
     font-size: 11px;
+    justify-content: flex-end;
 }
 
 section.banner img{
@@ -58,8 +59,8 @@ header .form .input{
     outline: none;
     color: #666;
     padding: 2px;
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: 60%;
     border-radius: 6px;
 }
 
@@ -133,6 +134,7 @@ div.burger-menu i{
 .footer-icons i {
     font-size: 2em;
     margin-bottom: 10px;
+    margin-top: 10px;
     background-color: white;
     color: #1259c3;
     display: flex;
@@ -374,6 +376,22 @@ main section article:hover {
     margin: 10px 0px 15px 0px;
 }
 
+footer h4 {
+    font-size: small;
+}
+footer h3 {
+    font-size: large;
+}
+
+#searchproduct{
+    display: flex;
+    position: absolute;
+    background: white;
+    border: none;
+    color: #666;
+    width: 1rem;
+}
+
 /*TABLET*/
 @media (min-width: 576px){
     main section article:hover {
@@ -405,28 +423,41 @@ main section article:hover {
 
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }   
     nav ul{
         display: flex;
         width: 35%;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
-
+    footer h4 {
+        font-size: 16px;
+    }
+    footer h3 {
+        font-size: 24px;
+    }
 /*AJUSTE LOGO, BUSQUEDA Y TEXTO*/
-header .form {
+    header .form {
     width: 30%;
     display: flex;
-    align-items: center;}
+    align-items: center;
+    justify-content: flex-end;
+    }
     
     header .form .input {
     display: flex;
     width: 100% }
     
     header .form .input .searchbar {
+    display: flex;
     width: 100%;
-    padding: 1px;
+    height: 2.5rem;
+    border: none;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
     }
+
 
     header div.header-logo {
         width: 33%;
@@ -437,10 +468,10 @@ header .form {
         width: 30%;
     }    
 
-div.top-header{
+    div.top-header{
     align-items: center;
     justify-content: space-between;
-}
+    }
 
 /*DESKTOP*/
 @media (min-width: 992px){
@@ -454,6 +485,8 @@ div.top-header{
     }
     .footer-icons i:hover{
         color: #EAC926;
+        transition: color 0.5s;
     }
+ 
 }
 }
